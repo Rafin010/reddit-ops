@@ -1,0 +1,7 @@
+{
+  "url": "{{parameters.baseUrl}}/r",
+  "method": "GET",
+  "response": {
+    "output": "{{body}}"
+  }
+}

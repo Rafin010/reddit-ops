@@ -1,0 +1,19 @@
+{
+  "url": "{{parameters.url}}",
+  "method": "GET",
+  "headers": [
+    {
+      "name": "key",
+      "value": "Accept"
+    },
+    {
+      "name": "value",
+      "value": "application/json"
+    }
+  ],
+  "body": {
+    "type": "text",
+    "label": "Request body",
+    "required": false
+  }
+}

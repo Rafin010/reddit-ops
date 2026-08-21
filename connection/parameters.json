@@ -1,0 +1,17 @@
+[
+  {
+    "name": "apiKey",
+    "type": "password",
+    "label": "API key or access token",
+    "editable": true,
+    "required": true
+  },
+  {
+    "name": "baseUrl",
+    "type": "url",
+    "label": "API base URL",
+    "editable": true,
+    "required": true,
+    "default": "https://oauth.reddit.com"
+  }
+]

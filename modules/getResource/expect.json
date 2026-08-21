@@ -1,0 +1,7 @@
+[
+  {
+    "name": "body",
+    "type": "collection",
+    "label": "Response body"
+  }
+]

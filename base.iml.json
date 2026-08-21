@@ -1,0 +1,8 @@
+{
+  "common": {
+    "note": "Shared IML helpers can be added here."
+  },
+  "log": {
+    "level": "debug"
+  }
+}

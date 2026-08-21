@@ -1,0 +1,8 @@
+[
+  {
+    "name": "body",
+    "type": "collection",
+    "label": "Response",
+    "mappable": true
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "name": "reddit-ops",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node --input-type=module -e \"import fs from 'fs'; JSON.parse(fs.readFileSync('makecomapp.json'))\""
+  },
+  "devDependencies": {}
+}

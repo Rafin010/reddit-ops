@@ -1,0 +1,13 @@
+{
+  "url": "{{parameters.baseUrl}}",
+  "method": "GET",
+  "headers": {
+    "Authorization": "Bearer {{parameters.apiKey}}",
+    "Accept": "application/json"
+  },
+  "response": {
+    "output": {
+      "ok": "{{statusCode >= 200 and statusCode < 300}}"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "fileVersion": 1,
+  "generalCodeFiles": {
+    "base": "base.iml.json",
+    "common": null,
+    "readme": "README.md",
+    "groups": null
+  },
+  "components": {
+    "connection": {
+      "apiKeyAuth": {
+        "label": "Reddit Operations API key",
+        "connectionType": "basic",
+        "codeFiles": {
+          "communication": "connection/communication.json",
+          "params": "connection/parameters.json",
+          "common": null
+        }
+      }
+    },
+    "webhook": {},
+    "module": {
+      "getResource": {
+        "label": "Get resource",
+        "description": "Reddit subreddits and posts.",
+        "moduleType": "action",
+        "connection": "apiKeyAuth",
+        "codeFiles": {
+          "communication": "modules/getResource/communication.json",
+          "parameters": "modules/getResource/parameters.json",
+          "mappableParams": "modules/getResource/expect.json",
+          "interface": "modules/getResource/interface.json",
+          "samples": "modules/getResource/samples.json"
+        }
+      },
+      "searchResources": {
+        "label": "Search resources",
+        "description": "Reddit subreddits and posts.",
+        "moduleType": "search",
+        "connection": "apiKeyAuth",
+        "codeFiles": {
+          "communication": "modules/searchResources/communication.json",
+          "parameters": "modules/searchResources/parameters.json",
+          "mappableParams": "modules/searchResources/expect.json",
+          "interface": "modules/searchResources/interface.json",
+          "samples": "modules/searchResources/samples.json"
+        }
+      },
+      "makeAnApiCall": {
+        "label": "Make an API call",
+        "description": "Reddit subreddits and posts.",
+        "moduleType": "universal",
+        "connection": "apiKeyAuth",
+        "codeFiles": {
+          "communication": "modules/makeAnApiCall/communication.json",
+          "parameters": "modules/makeAnApiCall/parameters.json",
+          "mappableParams": "modules/makeAnApiCall/expect.json",
+          "interface": "modules/makeAnApiCall/interface.json",
+          "samples": "modules/makeAnApiCall/samples.json"
+        }
+      }
+    },
+    "rpc": {},
+    "function": {},
+    "endpoint": {}
+  },
+  "origins": [
+    {
+      "label": "Testing",
+      "baseUrl": "https://eu1.make.com/api",
+      "appId": "reddit-ops-test",
+      "appVersion": 1,
+      "apikeyFile": ".secrets/apikey"
+    }
+  ]
+}
